@@ -33,6 +33,9 @@ void insertMiddle (struct mhs *pos, struct mhs *data){ //Fungsi ini melakukan in
 	}
 }
 
+void testingFunct(){
+	printf("Testing");
+}
 void insertLast (struct mhs *data){ //Fungsi ini melakukan insert di akhir
 	if (head == NULL){
 		head = data;
@@ -40,6 +43,7 @@ void insertLast (struct mhs *data){ //Fungsi ini melakukan insert di akhir
 		struct mhs *ptr = head;
 		while (ptr->next !=NULL) ptr = ptr->next;
 		ptr->next = data;
+		printf("\n");
 	}
 }
 
@@ -106,7 +110,6 @@ int main(){
 	insertLast(p);
 	insertLast(q);
 	insertLast(s);
-	insertLast(t);
 	deleteMiddle(s);
 	struct mhs *temp;
 	temp = searchByNim("1901466641");
